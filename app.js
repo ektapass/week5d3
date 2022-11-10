@@ -90,11 +90,11 @@ class USSShip{
             }
             //this is not working
             // variables for modal
-        //     const modal = document.querySelector(".modal")
-        // const trigger = document.querySelector(".trigger")
-        //     const closeButton = document.querySelector(".close-button")
-        //     const modalPlay = document.querySelector(".modal-play")
-        //     const modalRetreat = document.querySelector(".modal-retreat")
+            const modal = document.querySelector(".modal")
+        const trigger = document.querySelector(".trigger")
+            const closeButton = document.querySelector(".close-button")
+            const modalPlay = document.querySelector(".modal-play")
+            const modalRetreat = document.querySelector(".modal-retreat")
 
             let alienShipGenerator= new AlienShipFactory()
             alienShipGenerator.makeAlienShip('Alien ship 1')
@@ -131,11 +131,11 @@ class USSShip{
             }
          } 
          //This is not working
-        //  trigger.addEventListener("click",myGameRound.toggleModal)  
-        //  closeButton.addEventListener("click",myGameRound.closeModal)  
-        //  window.addEventListener("load",myGameRound.promptMyModal)  
-        //  modalPlay.addEventListener("click",myGameRound.continueToPlay)  
-        //  modalRetreat.addEventListener("click",myGameRound.endThisGame)  
+         trigger.addEventListener("click",myGameRound.toggleModal)  
+         closeButton.addEventListener("click",myGameRound.closeModal)  
+         window.addEventListener("load",myGameRound.promptMyModal)  
+         modalPlay.addEventListener("click",myGameRound.continueToPlay)  
+         modalRetreat.addEventListener("click",myGameRound.endThisGame)  
 
 
          alienShipGenerator.alienShipCollection[0].hull=10
