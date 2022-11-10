@@ -88,6 +88,7 @@ class USSShip{
                     }
                 }
             }
+            //this is not working
             // variables for modal
         //     const modal = document.querySelector(".modal")
         // const trigger = document.querySelector(".trigger")
