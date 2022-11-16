@@ -24,9 +24,9 @@ class USSShip{
       this.accuracy = .7
     }
     attack(evilAlien){
-        checkGame() 
-
-        
+         
+            
+             
         if(isGameOver == false){
             if(this.hull>0){
                 console.log(`I ${this.name} have ${this.hull} life left`)
@@ -46,12 +46,13 @@ class USSShip{
         
       }
     }
-}
+  }
+
 
     class AlienShip {
             constructor(){
-               // super();
-                //this.name ='Alien';
+               
+                this.name ='Alien';
                 this.hull= this.#randomValue(3,6)
                 this.firePower=this.#randomValue(2,4)
                 this.accuracy=this.#randomValue(.6,.8)
@@ -88,7 +89,7 @@ class USSShip{
                     }
                 }
             }
-            //this is not working
+            
             // variables for modal
             const modal = document.querySelector(".modal")
         const trigger = document.querySelector(".trigger")
@@ -113,7 +114,7 @@ class USSShip{
 
             },
              closeModal(){
-                // modal.classList.remove("show-modal")
+                 modal.classList.remove("show-modal")
 
              },
             promptMyModal(event){
@@ -130,7 +131,7 @@ class USSShip{
                 console.log('The game is over')
             }
          } 
-         //This is not working
+        
          trigger.addEventListener("click",myGameRound.toggleModal)  
          closeButton.addEventListener("click",myGameRound.closeModal)  
          window.addEventListener("load",myGameRound.promptMyModal)  
